@@ -70,7 +70,7 @@
       "ConstraintDescription": "must be a valid IP CIDR range of the form x.x.x.x/x."
     },
 
-    "RGName": {
+    "ResourceGroupName": {
       "Description" : "Name of an existing resource group name",
       "Type": "String",
       "MinLength":"1",
@@ -394,7 +394,7 @@
         "Tags" : [
           {
             "Key" : "RG",
-            "Value" : {"Ref" : "RGName"}
+            "Value" : {"Ref" : "ResourceGroupName"}
           }
         ]
       },
